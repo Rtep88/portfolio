@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='cs'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petr Švestka - Programátor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <div id="menu">
+      <button onclick="ScrollToElement('experience-start')">Zkušenosti</button>
+      <button onclick="ScrollToElement('projects-start')">Projekty</button>
+      <button onclick="ScrollToElement('contacts')">Kontaktujte mě</button>
+    </div>
+    <img id="mobile-menu-icon" src="images/Dropdown-menu.png" alt="Menu"
+      onclick="ToggleOpenMenu()">
+  </nav>
+  <main>
+    <section id="introduction">
+      <div id="introduction-header">
+        <div>
+          <h1>Petr Švestka</h1>
+        </div>
+        <div>
+          <h2>C# Programátor</h2>
+        </div>
+      </div>
+      <div id="introduction-text">
+        <div>
+          <p>
+            Vítejte na mojí stránce. Programování se věnuji už od 10 let a vždy mě bavilo se učit nové
+            technologie a programovací jazyky. Na této stránce najdete sbírku mých nejlepších projektů.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div id="social-medias">
+        <a class="instagram-icon" href="https://www.instagram.com/r_tep88/" target="_blank"><img
+            src="./images/Instagram-icon.png" alt="Instagram-icon icon"></a>
+        <a class="discord-icon" href="https://discordapp.com/users/606854658438332417" target="_blank"><img
+            src="./images/Discord-icon.png" alt="Discord icon"></a>
+        <a class="github-icon" href="https://github.com/Rtep88" target="_blank"><img src="./images/Github-icon.png"
+            alt="Github icon"></a>
+      </div>
+      <button class="down-arrow" onclick="ScrollToElement('experience-start')">↓</button>
+    </section>
+    <hr id="experience-start">
+    <section id="experience">
+      <div class="appear-at-scroll">
+        <h2>Monogame</h2>
+        <p>3 roky zkušeností</p>
+      </div>
+      <div class="appear-at-scroll">
+        <h2>Win Forms</h2>
+        <p>1.5 roku zkušeností</p>
+      </div>
+      <div class="appear-at-scroll">
+        <h2>Unity</h2>
+        <p>1 rok zkušeností</p>
+      </div>
+      <div class="appear-at-scroll">
+        <h2>WPF</h2>
+        <p>4 roky zkušeností</p>
+      </div>
+    </section>
+    <hr id="projects-start">
+    <section id="projects">
+      <h1 class="appear-at-scroll">Projekty</h1>
+      <br>
+      <section id="projects-images">
+        <div class="appear-at-scroll">
+          <img src="./images/Project-1.png" alt="Project 1">
+          <h3>Labyrinth of Secrets</h3>
+          <p>C# Monogame</p>
+        </div>
+        <div class="appear-at-scroll">
+          <img src="./images/Project-2.png" alt="Project 2">
+          <h3>Mágové z Hexanu</h3>
+          <p>C# Monogame</p>
+        </div>
+        <div class="appear-at-scroll">
+          <img src="./images/Project-3.png" alt="Project 3">
+          <h3>Terraria Remake</h3>
+          <p>C# Monogame</p>
+        </div>
+        <div class="appear-at-scroll">
+          <img src="./images/Project-4.png" alt="Project 4">
+          <h3>Monster Hunter</h3>
+          <p>C# Monogame</p>
+        </div>
+        <div class="appear-at-scroll">
+          <img src="./images/Project-5.png" alt="Project 5">
+          <h3>Manic Miner Remake</h3>
+          <p>C# WPF</p>
+        </div>
+        <div class="appear-at-scroll">
+          <img src="./images/Project-6.png" alt="Project 6">
+          <h3>Space Invaders Remake</h3>
+          <p>C# Win Forms</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer id="contacts">
+    <section id="footer-first">
+      <div>
+        <h1>Kontakt</h1>
+        <h3>Email: petr.plum@seznam.cz</h3>
+        <h3>Tel: +420 123 456 789</h3>
+      </div>
+      <form>
+        <label for="email">Váš email</label>
+        <input type="text" id="email" name="email" placeholder="example@example.com">
+
+        <label for="subject">Zpráva</label>
+        <textarea id="subject" name="subject" placeholder="Napište něco.."></textarea>
+
+        <input id="submit" type="submit" value="Odeslat">
+      </form>
+    </section>
+    <hr>
+    <section id="footer-second">
+      <h3>Petr Švestka ©2024</h3>
+      <div>
+        <a class="instagram-icon" href="https://www.instagram.com/r_tep88/" target="_blank"><img
+            src="./images/Instagram-icon.png" alt="Instagram icon"></a>
+        <a class="discord-icon" href="https://discordapp.com/users/606854658438332417" target="_blank"><img
+            src="./images/Discord-icon.png" alt="Discord icon"></a>
+        <a class="github-icon" href="https://github.com/Rtep88" target="_blank"><img src="./images/Github-icon.png"
+            alt="Github icon"></a>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
